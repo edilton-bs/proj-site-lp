@@ -29,3 +29,15 @@ a:link {
 .big-text {
    font-size: 20px;
    }
+   
+th {
+  background: $primary !important;
+  color: white;
+  }
+  
+td, th {
+   border: 1px solid #ddd;
+   padding: 8px;
+} 
+  
+ 

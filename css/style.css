@@ -10463,4 +10463,14 @@ a:link {
   font-size: 20px;
 }
 
+th {
+  background: #0d6efd !important;
+  color: white;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
 /*# sourceMappingURL=style.css.map */

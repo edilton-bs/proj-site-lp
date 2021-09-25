@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Página inicial</title>
+    <title>NOTAS</title>
     <meta charset="utf-8">
 	<!--css bootstrap via cdn -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -9,10 +9,11 @@
 	<link href="css/style.css" rel="stylesheet" >
 	<!--icones fontawesome-->
 	<script src="https://kit.fontawesome.com/52605967c9.js" crossorigin="anonymous"></script>
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery source -->
   </head>
-  <body>
   
-  <!-- barra de navegação -->
+  <body>
+      <!-- barra de navegação -->
   
 <nav class=" navbar navbar-expand-lg  nav-lek">
   <div class="container-fluid nav-lek">
@@ -83,96 +84,62 @@
         </div>
 		
        <div class="col py-3">
-		<!-- COMEÇA AQUI O CONTEÚDO DO SITE -->
-		
-				<a href="#">
-					<div  class="container-sm ">
-						<div class="row bg-light rounded shadow ">
-							<div class="col-sm-1 ">
-								<img  height="80px" width="auto" src="https://www.pinclipart.com/picdir/big/355-3553881_stockvader-predicted-adig-user-profile-icon-png-clipart.png" alt="foto do usuário">
-							</div>
-			  
-			  
-							<div class="col-sm-3 ">
-							  <b>Nome de usuário</b>
-							  <br>
-							  Estudante de Matemática
-							</div>
-							
-							<div class="col-sm-1 ">
-							  <img  height="80px" width="auto" src="https://www.vippng.com/png/full/367-3674491_the-regional-economic-investment-strategy-recommends-linkedin-circle.png" alt="grafico">
-							</div>
-							
-							<div class="col-sm-2 ">
-							  <b>Analisar desempenho</b>
-							</div>
-							
-							
-			
-						</div>
+         <!--conteúdo-->
+  
+         <!-- configurações -->
+		<div class="big-text"> Notas </div>
+		<hr>
+  
+                   <!--tabela de notas-->
+                    <table class="border bg-light rounded shadow ">
+                            <tr> <th>MATERIA</th> <th>NOTAS</th> <th>NOTAS</th> <th>RECUPERAÇÃO</th> <th>NOTAS</th> <th>NOTAS</th> <th>RECUPERAÇÃO</th> <th>SOMA FINAL</th> </tr>
+                            <tr> <td>Materia 1</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+                            <tr> <td>Materia 2</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+                            <tr> <td>Materia 3</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+							<tr> <td>Materia 4</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+							<tr> <td>Materia 5</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+							<tr> <td>Materia 6</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+                    </table>
+                    <script>
+    $(function(){
+            $("td").click(function(event){
+                    if($(this).children("input").length > 0)
+                            return false;
+                    var tdObj = $(this);
+                    var preText = tdObj.html();
+                    var inputObj = $("<input type='text' />");
+                    tdObj.html("");
+                    inputObj.width(tdObj.width())
+                            .height(tdObj.height())
+                            .css({border:"0px",fontSize:"17px"})
+                            .val(preText)
+                            .appendTo(tdObj)
+                            .trigger("focus")
+                            .trigger("select");
+                    inputObj.keyup(function(event){
+                            if(13 == event.which) { // press ENTER-key
+                                    var text = $(this).val();
+                                    tdObj.html(text);
+                            }
+                            else if(27 == event.which) {  // press ESC-key
+                                    tdObj.html(preText);
+                            }
+                  });
+                    inputObj.click(function(){
+                            return false;
+                    });
+            });
+    });
+                    </script>
 					
-					</div>
-				</a>
-		
-		<br>
-      <!-- cards matérias -->
-				<div class="row row-cols-1 row-cols-md-3 g-4">
-				  <div class="col">
-					<div class="card mb-4 rounded shadow">
-					  <img src="https://i.ytimg.com/vi/Rf2WaUyvpVg/maxresdefault.jpg" class="card-img-top" alt="...">
-						    <div class="card-body">
-								<h5 class="card-title">Cálculo</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Acessar conteúdo</a>
-						    </div>
-					</div>
-				  </div>
-				  <div class="col">
-					<div class="card mb-4 rounded shadow">
-					  <img src="https://i.ytimg.com/vi/Rf2WaUyvpVg/maxresdefault.jpg" class="card-img-top" alt="...">
-						    <div class="card-body">
-								<h5 class="card-title">Cálculo</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Acessar conteúdo</a>
-						    </div>
-					</div>
-				  </div>
-				  <div class="col">
-					<div class="card mb-4 rounded shadow">
-					  <img src="https://i.ytimg.com/vi/Rf2WaUyvpVg/maxresdefault.jpg" class="card-img-top" alt="...">
-						    <div class="card-body">
-								<h5 class="card-title">Cálculo</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Acessar conteúdo</a>
-						    </div>
-					</div>
-				  </div>
-				  <div class="col ">
-					<div class="card mb-4 rounded shadow">
-					  <img src="https://i.ytimg.com/vi/Rf2WaUyvpVg/maxresdefault.jpg" class="card-img-top" alt="...">
-						    <div class="card-body">
-								<h5 class="card-title">Cálculo</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Acessar conteúdo</a>
-						    </div>
-					</div>
-				  </div>
-				</div>
-				
-		
-		
-		
-		
-		<!-- fim conteúdo-->
+	<!-- fim conteúdo-->
         
         </div>
-	</div>
+	 </div>
 </div>
-
-
-	<br>
-	<!-- scripts do bootstrap -->
+ 
+     <!--scripts bootstrap-->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
   </body>
 </html>
