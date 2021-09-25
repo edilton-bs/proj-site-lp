@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Página inicial</title>
+    <meta charset="utf-8">
+	<!- css bootstrap via cdn- >
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<!- css local customizado - >
+	<link href="css\style.css" rel="stylesheet" >
+	<!- icones fontawesome->
+	<script src="https://kit.fontawesome.com/52605967c9.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  
+  <! -- barra de navegação -- >
+  
+<nav class=" navbar navbar-expand-lg  nav-lek">
+  <div class="container-fluid nav-lek">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active c-hover" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link c-hover" href="#">Ajuda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li><a class="dropdown-item" href="#">Suporte</a></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<! -- menu vertical -->
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <div class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Menu</span>
+                </div>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    
+                    <li>
+					    <a href="#" class="nav-link px-0">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i> PERFIL </a>
+						
+                        <a href="#" class="nav-link px-0">
+                        <i class="fas fa-poll"></i> NOTAS </a>
+                        
+						<a href="#" class="nav-link px-0"> 
+						<i class="fas fa-calendar-alt"></i> PLANO DE ESTUDO  </a>
+                            
+                        <a href="#" class="nav-link px-0"> <i class="fas fa-comments"></i> FÓRUM </a>
+                           
+						<a href="#" class="nav-link px-0"> <i class="fa fa-address-book" aria-hidden="true"></i> AMIGOS </a>
+						 
+						<a href="#" class="nav-link px-0">
+                        <i class="fas fa-cog"></i> CONFIGURAÇÕES</a>
+						
+						<a href="#" class="nav-link px-0">
+                        <i class="fas fa-sign-out-alt"></i> SAIR </a>
+                    </li>
+        
+                </ul>
+                <hr>
+                <div class="dropdown">
+                    
+                    
+                </div>
+            </div>
+        </div>
+		
+       <div class="col py-3">
+		<! -- COMEÇA AQUI O CONTEÚDO DO SITE -- >
+		
+				<a href="#">
+					<div  class="container-sm ">
+						<div class="row bg-light rounded shadow ">
+							<div class="col-sm-1 ">
+								<img  height="80px" width="auto" src="https://www.pinclipart.com/picdir/big/355-3553881_stockvader-predicted-adig-user-profile-icon-png-clipart.png">
+							</div>
+			  
+			  
+							<div class="col-sm-3 ">
+							  <b>Nome de usuário</b>
+							  <br>
+							  Estudante de Matemática
+							</div>
+							
+							<div class="col-sm-1 ">
+							  <img  height="80px" width="auto" src="https://www.vippng.com/png/full/367-3674491_the-regional-economic-investment-strategy-recommends-linkedin-circle.png">
+							</div>
+							
+							<div class="col-sm-2 ">
+							  <b>Analisar desempenho</b>
+							</div>
+							
+							
+			
+						</div>
+					
+					</div>
+				</a>
+		
+		<br>
+      <! -- cards matérias -->
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+				  <div class="col">
+					<div class="card mb-4">
+					  <img src="https://i.ytimg.com/vi/Rf2WaUyvpVg/maxresdefault.jpg" class="card-img-top" alt="...">
+						    <div class="card-body">
+								<h5 class="card-title">Cálculo</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">Acessar conteúdo</a>
+						    </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card mb-4">
+					  <img src="https://i.ytimg.com/vi/Rf2WaUyvpVg/maxresdefault.jpg" class="card-img-top" alt="...">
+						    <div class="card-body">
+								<h5 class="card-title">Cálculo</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">Acessar conteúdo</a>
+						    </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card mb-4">
+					  <img src="https://i.ytimg.com/vi/Rf2WaUyvpVg/maxresdefault.jpg" class="card-img-top" alt="...">
+						    <div class="card-body">
+								<h5 class="card-title">Cálculo</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">Acessar conteúdo</a>
+						    </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card mb-4">
+					  <img src="https://i.ytimg.com/vi/Rf2WaUyvpVg/maxresdefault.jpg" class="card-img-top" alt="...">
+						    <div class="card-body">
+								<h5 class="card-title">Cálculo</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">Acessar conteúdo</a>
+						    </div>
+					</div>
+				  </div>
+				</div>
+				
+		
+		
+		
+		
+		<! -- fim conteúdo-->
+        
+        </div>
+	</div>
+</div>
+
+
+	<br>
+	<! -- scripts do bootstrap -- >
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  </body>
+</html>

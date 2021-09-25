@@ -1,0 +1,28 @@
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+a:link {
+  text-decoration: none;
+}
+
+.container-ssm {
+  @include make-container(); 
+  width: 400px ;
+  margin-left 0px;
+  }
+  
+.nav-lek {
+	background: rgb(0,79,94)  !important;
+	background: linear-gradient(170deg, rgba(0,79,94,1) 0%, rgba(63,164,184,1) 54%) !important;
+
+ }
+ 
+.nav-link {
+ color: white !important;
+ }
+ 
+.c-hover:hover {
+  opacity: 0.5;
+}
