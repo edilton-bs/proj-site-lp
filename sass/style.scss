@@ -10,7 +10,6 @@ a:link {
 .container-ssm {
   @include make-container(); 
   width: 400px ;
-  margin-left 0px;
   }
   
 .nav-lek {
@@ -26,3 +25,7 @@ a:link {
 .c-hover:hover {
   opacity: 0.5;
 }
+
+.big-text {
+   font-size: 20px;
+   }
