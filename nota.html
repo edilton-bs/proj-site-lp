@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>NOTAS</title>
+    <meta charset="utf-8">
+     <!-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link href="css\style.css" rel="stylesheet" >
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery source -->
+  </head>
+  
+  <body>
+                    <table border="1">
+                            <tr> <td>MATERIA</td> <td>NOTAS</td> <td>NOTAS</td> <td>RECUPERAÇÃO</td> <td>NOTAS</td> <td>NOTAS</td> <td>RECUPERAÇÃO</td> <td>SOMA FINAL</td> </tr>
+                            <tr> <td>Materia 1</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+                            <tr> <td>Materia 2</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+                            <tr> <td>Materia 3</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+							<tr> <td>Materia 4</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+							<tr> <td>Materia 5</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+							<tr> <td>Materia 6</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+                    </table>
+                    <script>
+    $(function(){
+            $("td").click(function(event){
+                    if($(this).children("input").length > 0)
+                            return false;
+                    var tdObj = $(this);
+                    var preText = tdObj.html();
+                    var inputObj = $("<input type='text' />");
+                    tdObj.html("");
+                    inputObj.width(tdObj.width())
+                            .height(tdObj.height())
+                            .css({border:"0px",fontSize:"17px"})
+                            .val(preText)
+                            .appendTo(tdObj)
+                            .trigger("focus")
+                            .trigger("select");
+                    inputObj.keyup(function(event){
+                            if(13 == event.which) { // press ENTER-key
+                                    var text = $(this).val();
+                                    tdObj.html(text);
+                            }
+                            else if(27 == event.which) {  // press ESC-key
+                                    tdObj.html(preText);
+                            }
+                  });
+                    inputObj.click(function(){
+                            return false;
+                    });
+            });
+    });
+                    </script>
+ 
+ 
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  </body>
+</html>
