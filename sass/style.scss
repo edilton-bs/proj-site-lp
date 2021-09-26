@@ -2,16 +2,19 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 
-
+/* PADRONIZAÇÃO ESTILO LINKS */
 a:link {
   text-decoration: none;
 }
 
+/* CONTAINER */
 .container-ssm {
   @include make-container(); 
   width: 400px ;
   }
   
+  
+/* ESTILO PARA BARRAS DE NAVEGAÇÃO */
 .nav-lek {
 	background: rgb(0,79,94)  !important;
 	background: linear-gradient(170deg, rgba(0,79,94,1) 0%, rgba(63,164,184,1) 54%) !important;
@@ -22,14 +25,20 @@ a:link {
  color: white !important;
  }
  
+ 
+/* HOVER USADO EM MUITOS LINKS, CONTAINERS */
 .c-hover:hover {
   opacity: 0.5;
 }
 
+
+/* ESTILO PARA ALGUNS TEXTOS */
 .big-text {
    font-size: 20px;
    }
    
+   
+/* ESTILO PARA TABELAS */
 th {
   background: $primary !important;
   color: white;

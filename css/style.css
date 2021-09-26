@@ -10433,10 +10433,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* PADRONIZAÇÃO ESTILO LINKS */
 a:link {
   text-decoration: none;
 }
 
+/* CONTAINER */
 .container-ssm {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
@@ -10446,6 +10448,7 @@ a:link {
   width: 400px;
 }
 
+/* ESTILO PARA BARRAS DE NAVEGAÇÃO */
 .nav-lek {
   background: #004f5e !important;
   background: linear-gradient(170deg, #004f5e 0%, #3fa4b8 54%) !important;
@@ -10455,14 +10458,17 @@ a:link {
   color: white !important;
 }
 
+/* HOVER USADO EM MUITOS LINKS, CONTAINERS */
 .c-hover:hover {
   opacity: 0.5;
 }
 
+/* ESTILO PARA ALGUNS TEXTOS */
 .big-text {
   font-size: 20px;
 }
 
+/* ESTILO PARA TABELAS */
 th {
   background: #0d6efd !important;
   color: white;
