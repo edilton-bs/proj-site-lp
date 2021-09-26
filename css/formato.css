@@ -144,13 +144,13 @@ h4 {
 
 /* BOTAO GOSTEI E NAO GOSTEI */
 
-#likecoment {
+.likecoment {
 	position: relative;
 	top: 20%;
 	left: 32%;
 }
 
-#likecoment i {
+.likecoment i {
 	margin:3px 11px;
 }
 
