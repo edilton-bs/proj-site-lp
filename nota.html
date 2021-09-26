@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -142,4 +143,150 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
   </body>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>NOTAS</title>
+    <meta charset="utf-8">
+	<!--css bootstrap via cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<!--css local customizado -->
+	<link href="css/style.css" rel="stylesheet" >
+	<!--icones fontawesome-->
+	<script src="https://kit.fontawesome.com/52605967c9.js" crossorigin="anonymous"></script>
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery source -->
+  </head>
+  
+  <body>
+      <!-- barra de navegação -->
+  
+<nav class=" navbar navbar-expand-lg  nav-lek">
+  <div class="container-fluid nav-lek">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active c-hover" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link c-hover" href="#">Ajuda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li><a class="dropdown-item" href="#">Suporte</a></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- menu vertical -->
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <div class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Menu</span>
+                </div>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    
+                    <li>
+					    <a href="#" class="nav-link px-0 c-hover">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i> PERFIL </a>
+						
+                        <a href="#" class="nav-link px-0 c-hover">
+                        <i class="fas fa-poll"></i> NOTAS </a>
+                        
+						<a href="#" class="nav-link px-0 c-hover"> 
+						<i class="fas fa-calendar-alt"></i> PLANO DE ESTUDO  </a>
+                            
+                        <a href="#" class="nav-link px-0 c-hover"> <i class="fas fa-comments"></i> FÓRUM </a>
+                           
+						<a href="#" class="nav-link px-0 c-hover"> <i class="fa fa-address-book" aria-hidden="true"></i> AMIGOS </a>
+						 
+						<a href="#" class="nav-link px-0 c-hover">
+                        <i class="fas fa-cog"></i> CONFIGURAÇÕES</a>
+						
+						<a href="#" class="nav-link px-0 c-hover">
+                        <i class="fas fa-sign-out-alt"></i> SAIR </a>
+                    </li>
+        
+                </ul>
+                <hr>
+                <div class="dropdown">
+                    
+                    
+                </div>
+            </div>
+        </div>
+		
+       <div class="col py-3">
+         <!--conteúdo-->
+  
+         <!-- configurações -->
+		<div class="big-text"> Notas </div>
+		<hr>
+  
+                   <!--tabela de notas-->
+                    <table class="border bg-light rounded shadow ">
+                            <tr> <th>MATERIA</th> <th>NOTAS</th> <th>NOTAS</th> <th>RECUPERAÇÃO</th> <th>NOTAS</th> <th>NOTAS</th> <th>RECUPERAÇÃO</th> <th>SOMA FINAL</th> </tr>
+                            <tr> <td>Materia 1</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+                            <tr> <td>Materia 2</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+                            <tr> <td>Materia 3</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+							<tr> <td>Materia 4</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+							<tr> <td>Materia 5</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+							<tr> <td>Materia 6</td> <td>Nota 1</td> <td>Nota 2</td> <td>Nota(1+2)</td> <td>Nota 3</td> <td>Nota 4</td> <td>Nota(3+4)</td> <td>Nota(F)</td> </tr>
+                    </table>
+                    <script>
+    $(function(){
+            $("td").click(function(event){
+                    if($(this).children("input").length > 0)
+                            return false;
+                    var tdObj = $(this);
+                    var preText = tdObj.html();
+                    var inputObj = $("<input type='text' />");
+                    tdObj.html("");
+                    inputObj.width(tdObj.width())
+                            .height(tdObj.height())
+                            .css({border:"0px",fontSize:"17px"})
+                            .val(preText)
+                            .appendTo(tdObj)
+                            .trigger("focus")
+                            .trigger("select");
+                    inputObj.keyup(function(event){
+                            if(13 == event.which) { // press ENTER-key
+                                    var text = $(this).val();
+                                    tdObj.html(text);
+                            }
+                            else if(27 == event.which) {  // press ESC-key
+                                    tdObj.html(preText);
+                            }
+                  });
+                    inputObj.click(function(){
+                            return false;
+                    });
+            });
+    });
+                    </script>
+					
+	<!-- fim conteúdo-->
+        
+        </div>
+	 </div>
+</div>
+ 
+     <!--scripts bootstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  </body>
+>>>>>>> 81bf5001e5548c3dc3211fcc16880aaefe5a667f
 </html>
