@@ -1,0 +1,220 @@
+<html lang="pt-br">
+<head>
+    <title>Perfil</title>
+    <meta charset="utf-8">
+	<!-- css bootstrap via cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<!-- css local customizado -->
+	<link rel="stylesheet" href="css/formato.css">
+	<link href="css\style.css" rel="stylesheet" >
+	<!-- icones fontawesome -->
+	<script src="https://kit.fontawesome.com/52605967c9.js" crossorigin="anonymous"></script>
+  </head>
+	
+<body>
+
+
+<nav class=" navbar navbar-expand-lg  nav-lek">
+  <div class="container-fluid nav-lek">
+    <a class="nav-link c-hover" href="#">Navegação</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active c-hover" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link c-hover" href="#">Ajuda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li><a class="dropdown-item" href="#">Suporte</a></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- menu vertical -->
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <div class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Menu</span>
+                </div>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    
+                    <li>
+					    <a href="#" class="nav-link px-0 c-hover">
+                        <p> <i class="fa fa-user-circle" aria-hidden="true"></i> Perfil </p> </a>
+						
+                        <a href="#" class="nav-link px-0 c-hover">
+						<p>	<i class="fas fa-poll"></i> Notas </p> </a>
+                        
+						<a href="#" class="nav-link px-0 c-hover"> 
+						<p>	<i class="fas fa-calendar-alt"></i> Plano de Estudo </p> </a>
+                            
+                        <a href="#" class="nav-link px-0 c-hover"> 
+						<p>	<i class="fas fa-comments"></i> Fórum </p> </a>
+                           
+						<a href="#" class="nav-link px-0 c-hover"> 
+						<p>	<i class="fa fa-address-book" aria-hidden="true"></i> Amigos </p> </a>
+						 
+						<a href="#" class="nav-link px-0 c-hover">
+						<p>	<i class="fas fa-cog"></i> Configurações </p> </a>
+						
+						<a href="#" class="nav-link px-0 c-hover">
+						<p>	<i class="fas fa-sign-out-alt"></i> Sair </p> </a>
+                    </li>
+        
+                </ul>
+                <hr>
+                <div class="dropdown">
+                    
+                    
+                </div>
+            </div>
+        </div>
+	   
+	   
+<!-- PERFIL -->  
+<div class="card" style="width: 18rem;" id="caixaperfil">
+  <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mr. Cherry</h5>
+    <p class="card-text">BIBLIOGRAFIA</p>
+	<p class="card-text">Meow!</p>
+	<ul class="list-group list-group-flush">
+    <li class="list-group-item"><p> <i class="fa fa-address-book" aria-hidden="true"></i> Amigos: 16 </p></li>
+    <li class="list-group-item"><p> <i class="fa fa-book" aria-hidden="true"></i> Matérias-cursando: 10 </p></li>
+    <li class="list-group-item"><p> <i class="fa fa-phone" aria-hidden="true"></i> Telefone: (21)9999-9999 </p></li>
+	<li class="list-group-item"><p> <i class="fa fa-envelope" aria-hidden="true"></i> mrcherry@escoline.com </p></li>
+  </ul>
+  </div>
+ 
+  <div class="card-body">
+    <a href="#" class="card-link">Privacidade</a>
+    <a href="#" class="card-link">Editar</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body" id="mostrar-amigos">
+        <h5 class="card-title">Amigos</h5>
+        <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80" class="imagemamigos" >
+		<img src="https://images.unsplash.com/photo-1548366086-7f1b76106622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=676&q=80" class="imagemamigos" >
+		<img src="https://images.unsplash.com/photo-1571566882372-1598d88abd90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="imagemamigos" >
+		<img src="https://images.unsplash.com/photo-1561948955-570b270e7c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=601&q=80" class="imagemamigos" >
+		<img src="https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80" class="imagemamigos" >
+		<img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" class="imagemamigos" >
+		<img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=736&q=80" class="imagemamigos" >
+		<img src="https://images.unsplash.com/photo-1569591159212-b02ea8a9f239?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" class="imagemamigos" >
+		<img src="https://images.unsplash.com/photo-1492370284958-c20b15c692d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" class="imagemamigos" >
+      	<img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=736&q=80" class="imagemamigos" >
+		<img src="https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" class="imagemamigos" >
+		<img src="https://images.unsplash.com/photo-1503777119540-ce54b422baff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=686&q=80" class="imagemamigos" >
+	  <p>Mostrar todos</p>
+	  </div>
+	  
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Conversas</h5>
+        <ul class="list-group">
+			<li class="list-group-item"><img src="https://images.unsplash.com/photo-1503777119540-ce54b422baff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=686&q=80" class="imagemamigos2" >        <i class="fa fa-comment" aria-hidden="true"></i>  Enviou uma mensagem!</li>
+			<li class="list-group-item"><img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=736&q=80" class="imagemamigos2" >        <i class="fa fa-comment" aria-hidden="true"></i>  Enviou uma mensagem!</li>
+			<li class="list-group-item"><img src="https://images.unsplash.com/photo-1492370284958-c20b15c692d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" class="imagemamigos2" >        <i class="fa fa-file-image-o" aria-hidden="true">  Enviou uma foto! </i></li>
+			<li class="list-group-item"><img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=736&q=80" class="imagemamigos2" >        <i class="fa fa-file-image-o" aria-hidden="true"> Enviou uma foto! </i></li>
+			<li class="list-group-item"><img src="https://images.unsplash.com/photo-1561948955-570b270e7c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=601&q=80" class="imagemamigos2" >        <i class="fa fa-comment" aria-hidden="true"></i> Enviou uma mensagem!</li>
+			<li class="list-group-item"><img src="https://images.unsplash.com/photo-1571566882372-1598d88abd90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="imagemamigos2" >        <i class="fa fa-microphone" aria-hidden="true"></i> Enviou um audio!</li>
+			<li class="list-group-item"><img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" class="imagemamigos2" >        <i class="fa fa-microphone" aria-hidden="true"></i> Enviou um audio!</li>
+			<li class="list-group-item"><img src="https://images.unsplash.com/photo-1506891536236-3e07892564b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80" class="imagemamigos2" >        <i class="fa fa-microphone" aria-hidden="true"></i> Enviou um audio!</li>
+			<li class="list-group-item"><img src="https://images.unsplash.com/photo-1500259571355-332da5cb07aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80" class="imagemamigos2" >        <i class="fa fa-comment" aria-hidden="true"></i>  Enviou uma mensagem!</li>
+			
+		</ul>
+      </div>
+    </div>
+  </div>
+</div>
+	   
+	   
+	   
+	   
+<!-- PERFIL -->
+
+	
+	
+  
+  
+</div>
+
+
+
+<!-- RODAPÉ - FUNÇÃO QUE CRIA O RODAPÉ DO SITE --> 
+<footer>
+
+	<div class="card">
+		<div class="card-header" id="logofooter">
+		<h4> E S C O L I N E . C O M </h4>
+		</div>
+	  
+		<div class="card-body" id="corpofooter">
+			<div class="contato" id="contatofooter">
+			<p class="p5"> Contato:</p> 
+			<p class="p4"> <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i> (21)9999-9999</p>
+			<p class="p4"> contato@escoline.com</p>
+			</div>
+			<!-- RODAPÉ- REDES SOCIAIS --> 
+			<div class="Redes-sociais" id="redesfooter">
+			<p class="p5">Siga-nos nas redes sociais!</p>
+			<i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+			<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+			<i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+			</div>	
+			
+			<div class="info" id="infofooter">
+			<p class="p4"> Sobre a ESCOLINE.COM</p>
+			<p class="p6"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> ATENÇÃO!  </p>
+			<p class="p4"> Esta empresa é fictícia <br> esse site é apenas um treinamento de HTML <br> nenhum de seus serviços existem. <br> GRATO!  </p>
+			<p class="p4"> 25/09/2021</p>
+			</div>
+			
+			
+			<div class="info2" id="infofooter2">
+			<p class="p7"> Português (pt-br) </p>
+			
+			</div>
+
+	  
+
+		
+		</div>
+	</div>
+
+
+</footer>
+
+
+
+
+		
+</body>
+
+<section>
+
+</section>
+</html>
