@@ -8,7 +8,7 @@
 	}
 	/* FONTES DO SITE */
 h1 {
-	font-family: "Lucida Console", "Courier New", monospace;
+	font-family: "Lucida Console", "Courier New", monospace, !important;
 	color: #fff;
 	opacity: 0.90;
 	position: absolute;
@@ -81,7 +81,7 @@ h4 {
 
 /* FONTES USADAS NO RODAPÉ */
 .p4 {
-	font-family: OCR A Std, monospace;
+	font-family: OCR A Std, monospace, !important;
 	color: #fff;
 	opacity: 0.30;
 	font-size: 12px;
@@ -140,6 +140,48 @@ h4 {
 #infofooter2 {
 	text-align: center;
 }
+
+
+/* BOTAO GOSTEI E NAO GOSTEI */
+
+#likecoment {
+	position: relative;
+	top: 20%;
+	left: 32%;
+}
+
+#likecoment i {
+	margin:3px 11px;
+}
+
+.fa-thumbs-o-up {
+	color: green;
+}
+.fa-thumbs-o-down {
+	color: red;
+}
+
+/* CSS DO MENU */
+
+#menu p {
+	font-family: OCR A Std, monospace, !important;
+	color: #fff;
+	opacity: 0.68;
+	font-size: 15px;
+}
+
+
+/* FORMATO DAS IMAGENS DA MATERIA*/
+
+
+.imgformato {
+	height: 250px;
+	width: 200px;
+}
+
+	
+
+
 
 	
 
